@@ -1,0 +1,639 @@
+[
+  {
+    "from": "support@paypa1.com",
+    "subject": "Urgent: Verify Your Account Now",
+    "body": "Your PayPal account has been limited. Click here immediately to restore access or your account will be permanently suspended within 24 hours.",
+    "type": "phishing",
+    "explanation": "Fake domain — '1' replaces 'l' in paypal."
+  },
+  {
+    "from": "security@maybank-secure-login.co",
+    "subject": "Suspicious Login Detected on Your Account",
+    "body": "We detected a login attempt from Kuala Lumpur (Unknown Device). If this wasn't you, verify your identity immediately via the link below or your account will be locked.",
+    "type": "phishing",
+    "explanation": "Maybank's real domain is maybank2u.com.my, not maybank-secure-login.co."
+  },
+  {
+    "from": "noreply@shopee-deals.net",
+    "subject": "You Won a Free iPhone 15 Pro!",
+    "body": "Congratulations! You've been randomly selected as our lucky winner this month. Claim your brand-new iPhone 15 Pro within 24 hours before it expires.",
+    "type": "phishing",
+    "explanation": "Shopee's official domain is shopee.com.my — 'shopee-deals.net' is fake."
+  },
+  {
+    "from": "admin@netflix-billing.info",
+    "subject": "Payment Failed — Update Your Card Now",
+    "body": "We couldn't process your Netflix subscription payment. Please update your billing details within 12 hours to avoid account suspension and losing your watchlist.",
+    "type": "phishing",
+    "explanation": "Netflix uses netflix.com only — 'netflix-billing.info' is a phishing domain."
+  },
+  {
+    "from": "helpdesk@microsoft-support365.com",
+    "subject": "Your Microsoft Account is at Risk",
+    "body": "Unusual sign-in activity was detected on your Microsoft account. Sign in immediately to secure it before it gets permanently locked by our security systems.",
+    "type": "phishing",
+    "explanation": "Microsoft's domain is microsoft.com, not microsoft-support365.com."
+  },
+  {
+    "from": "prize@amazon-winner.co.uk",
+    "subject": "Amazon Gift Card: RM500 Waiting for You!",
+    "body": "You have an unclaimed RM500 Amazon Gift Card from our loyalty program. Provide your details within 48 hours to receive it — this offer cannot be extended.",
+    "type": "phishing",
+    "explanation": "Unsolicited prizes are a classic phishing tactic. Fake domain and fake prize."
+  },
+  {
+    "from": "verify@appleid-secure.com",
+    "subject": "Apple ID Suspended — Immediate Action Required",
+    "body": "Your Apple ID has been temporarily suspended due to multiple suspicious login attempts. Verify your information now to regain full access to your device and purchases.",
+    "type": "phishing",
+    "explanation": "Apple's domain is apple.com — 'appleid-secure.com' is impersonation."
+  },
+  {
+    "from": "alert@google-accountverify.com",
+    "subject": "Google Account Security Alert — New Device",
+    "body": "Someone just tried to access your Google account from an unrecognised device in another country. Click here immediately to confirm or deny this login attempt.",
+    "type": "phishing",
+    "explanation": "Google uses google.com — 'google-accountverify.com' is a credential-harvesting site."
+  },
+  {
+    "from": "security@cimbclickssecure.com",
+    "subject": "CIMB Clicks: Suspicious Transaction Alert",
+    "body": "A transfer of RM3,200 was initiated from your account to an unknown beneficiary. If this was not you, click here immediately to cancel and freeze the transaction.",
+    "type": "phishing",
+    "explanation": "CIMB's real site is cimbclicks.com.my — 'cimbclickssecure.com' is fake."
+  },
+  {
+    "from": "support@whatsapp-verify.net",
+    "subject": "Your WhatsApp Account Will Be Deleted",
+    "body": "We are unable to verify your phone number on file. Please complete re-verification within 24 hours or your WhatsApp account and all your chats will be permanently deleted.",
+    "type": "phishing",
+    "explanation": "WhatsApp doesn't send emails from 'whatsapp-verify.net'."
+  },
+  {
+    "from": "billing@paypal-limited.com",
+    "subject": "PayPal Account Limited — Immediate Action Needed",
+    "body": "Due to unusual activity, your PayPal account has been limited. You will not be able to send, receive or withdraw money until you provide your information to lift the limitation.",
+    "type": "phishing",
+    "explanation": "PayPal uses paypal.com only — 'paypal-limited.com' is a phishing domain."
+  },
+  {
+    "from": "noreply@lazada-promo.xyz",
+    "subject": "Flash Deal: 90% Off — Today Only!",
+    "body": "You've been specially selected for an exclusive 90% off voucher on all items. This is a one-time offer — act now before the deal expires at midnight tonight!",
+    "type": "phishing",
+    "explanation": "'.xyz' is a suspicious TLD; Lazada uses lazada.com.my. Too-good deals are red flags."
+  },
+  {
+    "from": "admin@facebook-security-team.com",
+    "subject": "Your Facebook Account Has Been Compromised",
+    "body": "We detected unauthorized access to your Facebook account from an unfamiliar device. Log in immediately to secure it — accounts with no response will be permanently deleted in 48 hours.",
+    "type": "phishing",
+    "explanation": "Facebook uses facebook.com — 'facebook-security-team.com' is a fake domain."
+  },
+  {
+    "from": "taxes@hasil-gov.my.info",
+    "subject": "LHDN: Outstanding Tax Liability Detected",
+    "body": "According to our records, you have an unpaid income tax amount of RM1,450 for the Year of Assessment 2023. Settle this immediately to avoid legal action and a court summons.",
+    "type": "phishing",
+    "explanation": "LHDN uses hasil.gov.my — adding '.info' after it is a subdomain trick to deceive."
+  },
+  {
+    "from": "winner@dhl-prize.com",
+    "subject": "DHL: Parcel Held — Pay RM5 Customs Fee",
+    "body": "Your international parcel from overseas is currently held at Malaysian customs. Pay a small processing fee of RM5 via the link below to release your package within 2 working days.",
+    "type": "phishing",
+    "explanation": "DHL uses dhl.com — payment requests via email for customs fees are phishing."
+  },
+  {
+    "from": "alert@steam-guard.net",
+    "subject": "Steam Guard: Unusual Login Detected",
+    "body": "Someone has just logged into your Steam account from Russia using an unrecognised device. Confirm it's you or your account and all your games will be locked immediately.",
+    "type": "phishing",
+    "explanation": "Steam uses steampowered.com — 'steam-guard.net' is a fake domain."
+  },
+  {
+    "from": "security@instagram-helpcenter.com",
+    "subject": "Instagram: Your Account Has Been Flagged",
+    "body": "Your account may be permanently disabled within 24 hours due to repeated community guidelines violations. Submit an appeal now before the deadline or lose your account forever.",
+    "type": "phishing",
+    "explanation": "Instagram uses instagram.com for all official communications."
+  },
+  {
+    "from": "noreply@tiktok-reward.live",
+    "subject": "TikTok Creator Fund: Claim Your RM800 Payout",
+    "body": "Your TikTok Creator Fund earnings of RM800 are ready for withdrawal. Submit your bank account details through the secure link below to receive your payout within 3 business days.",
+    "type": "phishing",
+    "explanation": "TikTok uses tiktok.com — '.live' domain is fake, and payouts need bank details."
+  },
+  {
+    "from": "team@zoom-meetinginvite.com",
+    "subject": "You Have a Pending Zoom Meeting Invitation",
+    "body": "A meeting has been scheduled for you by your administrator. Click the link below to join or confirm your attendance. Failure to respond may result in your Zoom access being revoked.",
+    "type": "phishing",
+    "explanation": "Zoom uses zoom.us — 'zoom-meetinginvite.com' is a fake credential-phishing domain."
+  },
+  {
+    "from": "admin@office365-update.net",
+    "subject": "Office 365: Your Mailbox is Almost Full",
+    "body": "Your Microsoft 365 mailbox is 99% full and new emails are being rejected. Click here immediately to increase your storage quota or you will lose access to all your emails.",
+    "type": "phishing",
+    "explanation": "Microsoft uses microsoft.com or office.com — 'office365-update.net' is fake."
+  },
+  {
+    "from": "support@rhbonlinebanking.info",
+    "subject": "RHB: Please Re-Verify Your Identity",
+    "body": "We've updated our online banking security protocols. You must re-verify your identity by providing your login credentials to continue using RHB Online Banking services.",
+    "type": "phishing",
+    "explanation": "RHB uses rhbgroup.com — '.info' domains are common in phishing, and banks never ask for passwords via email."
+  },
+  {
+    "from": "noreply@grab-ewallet.co",
+    "subject": "GrabPay: Suspicious Transaction Blocked",
+    "body": "We automatically blocked a RM250 transfer from your GrabPay wallet to an unknown recipient. Verify your identity through the secure link below to unblock your wallet immediately.",
+    "type": "phishing",
+    "explanation": "Grab uses grab.com — 'grab-ewallet.co' is not affiliated with Grab."
+  },
+  {
+    "from": "reward@shopeepay-bonus.com",
+    "subject": "ShopeePay: RM100 Cashback Waiting to Be Claimed!",
+    "body": "You have an unclaimed RM100 cashback reward expiring tonight! Enter your ShopeePay PIN and account details through the link below to instantly credit the amount to your wallet.",
+    "type": "phishing",
+    "explanation": "ShopeePay uses shopee.com.my — asking for your PIN via email is a major red flag."
+  },
+  {
+    "from": "alert@touchngo-verification.com",
+    "subject": "Touch 'n Go eWallet: Account Placed on Hold",
+    "body": "Your Touch 'n Go eWallet has been placed on hold due to suspicious activity detected on your account. Complete identity verification via the link below to restore your balance and access.",
+    "type": "phishing",
+    "explanation": "Touch 'n Go uses tngdigital.com.my — fake domain using urgency to steal credentials."
+  },
+  {
+    "from": "prize@maxis-lucky.com",
+    "subject": "Maxis: You've Won a Free RM50 Prepaid Top-Up!",
+    "body": "Congratulations! As a valued Maxis customer, you've been selected to receive a FREE RM50 prepaid reload. Click the link below to claim it before it expires at midnight.",
+    "type": "phishing",
+    "explanation": "Maxis uses maxis.com.my — unsolicited prize emails from fake domains are phishing."
+  },
+  {
+    "from": "refund@airasia-refundclaim.net",
+    "subject": "AirAsia: Your Refund of RM320 is Pending",
+    "body": "Your flight refund of RM320 from a cancelled AirAsia booking is currently pending. Click here to provide your bank account number and receive the refund within 5 business days.",
+    "type": "phishing",
+    "explanation": "AirAsia uses airasia.com — 'airasia-refundclaim.net' is a fake domain to steal bank info."
+  },
+  {
+    "from": "secure@citi-cardverify.com",
+    "subject": "Citibank: Your Card Transaction Was Declined",
+    "body": "Your Citibank credit card was declined for a transaction. Please verify your full card details including CVV number via the secure link to reinstate your account and transaction privileges.",
+    "type": "phishing",
+    "explanation": "Citibank uses citibank.com.my — banks never ask for card CVV via email."
+  },
+  {
+    "from": "hr@company-bonuspayroll.com",
+    "subject": "Salary Adjustment Notice — Download Required Form",
+    "body": "Please download the attached form below to receive your updated salary statement and bonus allocation for Q1. Fill it in and submit by this Friday to ensure timely processing.",
+    "type": "phishing",
+    "explanation": "Suspicious HR domain. Asking for form submission to an external site is a data harvest."
+  },
+  {
+    "from": "lottery@malaysian-lottery2024.com",
+    "subject": "You've Won RM50,000 in the National Digital Lottery!",
+    "body": "Your phone number was randomly selected in Malaysia's National Digital Lottery 2024. You have won RM50,000! Claim your prize by providing your personal details within 72 hours.",
+    "type": "phishing",
+    "explanation": "There is no such lottery — this is a classic advance-fee / prize phishing scam."
+  },
+  {
+    "from": "update@dropbox-storagelimit.com",
+    "subject": "Dropbox: Storage Full — Files Will Be Deleted",
+    "body": "Your Dropbox account has reached 100% storage capacity. Files and folders will be permanently deleted in 24 hours unless you upgrade your plan immediately using the link below.",
+    "type": "phishing",
+    "explanation": "Dropbox uses dropbox.com — fake urgency and a fake domain to steal payment info."
+  },
+  {
+    "from": "verify@linkedin-jobs.net",
+    "subject": "You Have 5 New Interview Requests on LinkedIn",
+    "body": "5 employers have viewed your LinkedIn profile this week and sent you interview requests. Log in immediately to review these time-sensitive opportunities before they expire.",
+    "type": "phishing",
+    "explanation": "LinkedIn uses linkedin.com — 'linkedin-jobs.net' is a credential-harvesting fake site."
+  },
+  {
+    "from": "noreply@googledrive-share.com",
+    "subject": "Someone Shared an Important Document With You",
+    "body": "John Doe has shared 'Q4 Financial Report CONFIDENTIAL.pdf' with you via Google Drive. Click the link below to access and review the document immediately.",
+    "type": "phishing",
+    "explanation": "Google Drive links come from google.com or drive.google.com — not 'googledrive-share.com'."
+  },
+  {
+    "from": "admin@mygovmalaysia.info",
+    "subject": "MySejahtera: Mandatory Health Declaration Required",
+    "body": "A mandatory health declaration is required from all registered users. Failure to submit the declaration form within 48 hours may result in penalties and suspension of your MySejahtera access.",
+    "type": "phishing",
+    "explanation": "MySejahtera uses mysejahtera.malaysia.gov.my — '.info' is never used by Malaysian government."
+  },
+  {
+    "from": "deals@ebay-special.xyz",
+    "subject": "eBay: Exclusive 80% Discount Code Just for You!",
+    "body": "You have received a personalised 80% discount code for your next eBay purchase. This code expires in 24 hours and is limited to your account only — claim it before it's gone!",
+    "type": "phishing",
+    "explanation": "eBay uses ebay.com — '.xyz' domains with massive discount offers are classic phishing."
+  },
+  {
+    "from": "security@payoneer-securepay.com",
+    "subject": "Payoneer: Verify Your Bank Account to Continue",
+    "body": "We need to re-verify your linked bank account due to a system update. Please provide your full banking information including account number to continue processing withdrawals.",
+    "type": "phishing",
+    "explanation": "Payoneer uses payoneer.com — requests for full bank info via email are always suspicious."
+  },
+  {
+    "from": "helpdesk@uitm-admin.edu.info",
+    "subject": "UiTM: Student Portal — Re-Verify Your Account",
+    "body": "Your UiTM student portal account will expire unless you re-verify your login credentials using the secure form linked below. Complete verification before the end of this week.",
+    "type": "phishing",
+    "explanation": "UiTM uses uitm.edu.my — 'edu.info' is not a valid Malaysian academic or government domain."
+  },
+  {
+    "from": "notify@bank-islam-online.co",
+    "subject": "Bank Islam: Your e-Statement is Ready to Download",
+    "body": "Your latest Bank Islam e-Statement is ready. To download it, please provide your IC number and online banking password through our secure verification portal linked below.",
+    "type": "phishing",
+    "explanation": "Bank Islam uses bankislam.com.my — asking for passwords via email is never legitimate."
+  },
+  {
+    "from": "reward@celcom-freedata.com",
+    "subject": "Celcom: 30GB of Free Data — Claim Before Midnight!",
+    "body": "As a loyal Celcom subscriber, you've been exclusively selected to receive 30GB of FREE bonus data. Click the link below to activate it to your number before the offer expires tonight.",
+    "type": "phishing",
+    "explanation": "Celcom uses celcom.com.my — free data is not given via email from unknown domains."
+  },
+  {
+    "from": "alert@unifi-account-verify.com",
+    "subject": "Unifi: Bill Overdue — Service Suspension in 24 Hours",
+    "body": "Your Unifi broadband bill is overdue. Your internet service will be suspended within 24 hours. Pay immediately via the secure link below to prevent disruption to your connection.",
+    "type": "phishing",
+    "explanation": "Unifi uses unifi.com.my — fake domain creating payment urgency to steal financial info."
+  },
+  {
+    "from": "promo@foodpanda-cashback.net",
+    "subject": "Foodpanda: RM30 Cashback Still Unclaimed!",
+    "body": "You have an unclaimed RM30 cashback voucher in your account that expires tonight. Enter your Foodpanda account credentials via the link below to instantly collect your cashback reward.",
+    "type": "phishing",
+    "explanation": "Foodpanda uses foodpanda.my — 'foodpanda-cashback.net' is a fake credential-stealing site."
+  },
+  {
+    "from": "agent@investment-golden-returns.com",
+    "subject": "Exclusive Investment: 40% Monthly Returns Guaranteed",
+    "body": "Our licensed fund managers are offering an exclusive investment package guaranteeing 40% monthly returns. Register now with a minimum of RM500 — only 10 slots remain!",
+    "type": "phishing",
+    "explanation": "No legitimate investment guarantees 40% monthly returns. This is a financial scam."
+  },
+  {
+    "from": "support@paypal.com.accountlimit.co",
+    "subject": "PayPal Account Restricted — Verify Now",
+    "body": "We've restricted access to your PayPal account due to unusual activity. Please verify your identity immediately. Failure to do so will result in permanent account closure within 48 hours.",
+    "type": "phishing",
+    "explanation": "Real domain is 'accountlimit.co' — 'paypal.com' is just a subdomain used to deceive."
+  },
+  {
+    "from": "verify@twitter-helpcenter.net",
+    "subject": "X (Twitter): Identity Re-Verification Required",
+    "body": "To maintain your verified checkmark status on X, you must complete identity re-verification within 48 hours. Failure to comply will result in immediate removal of your verified badge.",
+    "type": "phishing",
+    "explanation": "X/Twitter uses x.com or twitter.com — 'twitter-helpcenter.net' is a fake phishing domain."
+  },
+  {
+    "from": "billing@spotify-renewalhelp.com",
+    "subject": "Spotify Premium: Payment Issue Detected",
+    "body": "We couldn't process your Spotify Premium renewal payment. Please update your credit card information immediately using the secure link below or your Premium access will be downgraded.",
+    "type": "phishing",
+    "explanation": "Spotify uses spotify.com — 'spotify-renewalhelp.com' is designed to steal card information."
+  },
+  {
+    "from": "no-reply@gmail-security.info",
+    "subject": "Gmail: New Device Sign-In Detected Just Now",
+    "body": "A new device signed into your Gmail account from an unknown location. If this was not you, click the link below immediately to secure your account and prevent unauthorised access.",
+    "type": "phishing",
+    "explanation": "Google uses accounts.google.com for security alerts — 'gmail-security.info' is fake."
+  },
+  {
+    "from": "irs@tax-refund-gov.com",
+    "subject": "Tax Refund of RM1,800 Pending Your Approval",
+    "body": "Your income tax refund of RM1,800 has been approved by LHDN. To initiate the transfer to your bank account, please provide your full account number and bank details via the link below.",
+    "type": "phishing",
+    "explanation": "LHDN uses hasil.gov.my — 'tax-refund-gov.com' is not a government site."
+  },
+  {
+    "from": "security@hsbc-onlineportals.com",
+    "subject": "HSBC: Your Account Has Been Temporarily Suspended",
+    "body": "Due to multiple failed login attempts, your HSBC account has been temporarily suspended for security reasons. Verify your identity immediately to restore full access to your banking.",
+    "type": "phishing",
+    "explanation": "HSBC uses hsbc.com.my — 'hsbc-onlineportals.com' is a phishing domain."
+  },
+  {
+    "from": "verify@crypto-wallet-recovery.com",
+    "subject": "Your Crypto Wallet Has Been Compromised — Act Now",
+    "body": "We detected unusual activity in your crypto wallet. Our security team needs your 12-word seed phrase immediately to verify ownership and recover your funds from the threat actor.",
+    "type": "phishing",
+    "explanation": "NEVER share your seed phrase with anyone — this is a guaranteed crypto theft attempt."
+  },
+  {
+    "from": "noreply@lazada-flash.shop",
+    "subject": "Lazada: 12.12 Mega Sale — Extra 70% Off Voucher!",
+    "body": "You have been personally selected to receive an extra 70% off voucher for the Lazada 12.12 Mega Sale. Enter your account details to redeem and stack it with existing promotions!",
+    "type": "phishing",
+    "explanation": "Lazada uses lazada.com.my — 'lazada-flash.shop' is a fake domain targeting shoppers."
+  },
+  {
+    "from": "customercare@grab-refundportal.com",
+    "subject": "Grab: Overcharge Refund of RM45 Available",
+    "body": "We detected you were overcharged for a recent GrabCar trip. A refund of RM45 is available. Provide your bank account details via the refund portal to receive the amount within 3 days.",
+    "type": "phishing",
+    "explanation": "Grab uses grab.com — 'grab-refundportal.com' is fake and designed to steal bank info."
+  },
+  {
+    "from": "no-reply@shopee.com",
+    "subject": "Your Shopee Order Has Been Shipped!",
+    "body": "Great news! Your order #SH293847 has been shipped and is on its way to you. You can track your parcel status anytime in the Shopee app under My Orders.",
+    "type": "legit",
+    "explanation": "Official Shopee domain — standard order shipped notification, no suspicious requests."
+  },
+  {
+    "from": "noreply@grab.com",
+    "subject": "Your GrabFood Order is On the Way!",
+    "body": "Your GrabFood order from Nasi Kandar Pelita has been picked up by your rider. Estimated arrival is approximately 20 minutes. Track your order live in the Grab app.",
+    "type": "legit",
+    "explanation": "Official Grab domain — standard delivery notification with no requests for credentials."
+  },
+  {
+    "from": "noreply@lazada.com.my",
+    "subject": "Your Lazada Order is Out for Delivery Today",
+    "body": "Your package is now with our delivery partner and is out for delivery. Expect it to arrive today between 2 PM and 6 PM. Please ensure someone is available to receive it.",
+    "type": "legit",
+    "explanation": "Official Lazada Malaysia domain — routine delivery notification, no credential requests."
+  },
+  {
+    "from": "support@apple.com",
+    "subject": "Your App Store Receipt — Procreate Purchase",
+    "body": "Thank you for your purchase! You bought Procreate for RM39.90 on the App Store. This email is your receipt — no further action is required from you.",
+    "type": "legit",
+    "explanation": "Official Apple domain — standard purchase receipt, no links to click and no requests."
+  },
+  {
+    "from": "no-reply@netflix.com",
+    "subject": "New Devices Were Added to Your Netflix Account",
+    "body": "Two new devices were added to your Netflix account profile this month. You can view and manage all devices connected to your account anytime from your Account Settings page.",
+    "type": "legit",
+    "explanation": "Official Netflix domain — informational message, no credential request or urgent action."
+  },
+  {
+    "from": "security@google.com",
+    "subject": "New Sign-In from Chrome on Windows 10",
+    "body": "Your Google account was just signed in from Chrome on a Windows 10 device. If this sign-in was you, no further action is needed. You can review activity anytime in your account settings.",
+    "type": "legit",
+    "explanation": "Official Google domain — standard security sign-in notification, no action required."
+  },
+  {
+    "from": "noreply@spotify.com",
+    "subject": "Your Spotify Premium Renews Tomorrow — RM15.90",
+    "body": "Just a heads-up! Your Spotify Premium subscription will automatically renew tomorrow for RM15.90. If you'd like to make changes to your plan, you can do so anytime in Account Settings.",
+    "type": "legit",
+    "explanation": "Official Spotify domain — routine renewal reminder, no suspicious links or actions needed."
+  },
+  {
+    "from": "no-reply@microsoft.com",
+    "subject": "Your Microsoft 365 Subscription Has Been Renewed",
+    "body": "Your Microsoft 365 Personal subscription has been successfully renewed for another year. Thank you for being a Microsoft 365 subscriber. Your next renewal date is March 2026.",
+    "type": "legit",
+    "explanation": "Official Microsoft domain — standard subscription renewal confirmation, informational only."
+  },
+  {
+    "from": "team@slack.com",
+    "subject": "You Have Unread Messages in #general",
+    "body": "You have unread messages waiting in your Slack workspace. Open Slack to catch up with your teammates and stay updated on the latest discussions in your channels.",
+    "type": "legit",
+    "explanation": "Official Slack domain — routine notification email, no credential or data requests."
+  },
+  {
+    "from": "noreply@github.com",
+    "subject": "[GitHub] A New Public Key Was Added to Your Account",
+    "body": "A new SSH key was recently added to your GitHub account. If you added this key, you can safely ignore this message. If you did not, please visit your Settings immediately to remove it.",
+    "type": "legit",
+    "explanation": "Official GitHub domain — standard security notification with appropriate warning guidance."
+  },
+  {
+    "from": "receipts@grab.com",
+    "subject": "GrabPay Transaction Receipt — RM12.50 at Shell",
+    "body": "You successfully paid RM12.50 to Shell Petrol Station using GrabPay. Your remaining GrabPay wallet balance is RM87.50. View your full transaction history in the Grab app.",
+    "type": "legit",
+    "explanation": "Official Grab receipts domain — standard transaction confirmation, no action required."
+  },
+  {
+    "from": "noreply@facebook.com",
+    "subject": "Amirul Sent You a Friend Request on Facebook",
+    "body": "Amirul has sent you a friend request on Facebook. Log in to your Facebook account to view their profile and respond to the request at your convenience.",
+    "type": "legit",
+    "explanation": "Official Facebook domain — standard friend request notification, no credential request."
+  },
+  {
+    "from": "info@airasia.com",
+    "subject": "AirAsia Booking Confirmed — AK101 KUL to SIN",
+    "body": "Your booking is confirmed! Flight AK101 from Kuala Lumpur to Singapore is scheduled for 15 March 2025. Online check-in will be available starting 48 hours before your departure time.",
+    "type": "legit",
+    "explanation": "Official AirAsia domain — standard booking confirmation, informational only."
+  },
+  {
+    "from": "noreply@twitter.com",
+    "subject": "Your X (Twitter) Monthly Recap for February",
+    "body": "Here's your February recap: you gained 42 new followers this month and your most liked tweet received 320 likes. Keep posting great content to grow your audience!",
+    "type": "legit",
+    "explanation": "Official Twitter/X domain — routine monthly digest email, no sensitive information requested."
+  },
+  {
+    "from": "noreply@linkedin.com",
+    "subject": "Your LinkedIn Profile Appeared in 12 Searches This Week",
+    "body": "Great news — your LinkedIn profile appeared in 12 searches this week! See who's been looking at your profile and discover new professional opportunities in your network.",
+    "type": "legit",
+    "explanation": "Official LinkedIn domain — standard weekly summary, no credentials or data requested."
+  },
+  {
+    "from": "no-reply@amazon.com",
+    "subject": "Your Amazon Order Has Been Delivered Successfully",
+    "body": "Your Amazon order — AmazonBasics USB-C Cable — was delivered to your address today. We hope you love your purchase! Rate it to help other customers make informed decisions.",
+    "type": "legit",
+    "explanation": "Official Amazon domain — standard delivery confirmation email, no action required."
+  },
+  {
+    "from": "noreply@tiktok.com",
+    "subject": "Your TikTok LIVE Session Recap — March 14",
+    "body": "Your TikTok LIVE session on March 14 had 1,204 viewers and you received RM18.50 worth of gifts from your audience. View your full LIVE analytics and earnings in the Creator Center.",
+    "type": "legit",
+    "explanation": "Official TikTok domain — routine analytics recap, no credentials or bank details requested."
+  },
+  {
+    "from": "support@paypal.com",
+    "subject": "You Successfully Sent RM50.00 to Razlan",
+    "body": "Your PayPal payment of RM50.00 to Razlan was completed successfully. Transaction ID: PP-847273601. If you did not make this payment, contact PayPal Support immediately.",
+    "type": "legit",
+    "explanation": "Official PayPal domain — standard transaction confirmation, no credentials requested."
+  },
+  {
+    "from": "no-reply@zoom.us",
+    "subject": "Your Zoom Cloud Recording is Now Ready",
+    "body": "Your Zoom meeting recording from 12 March 2025 has finished processing and is now available in your cloud storage. You can view, download, or share it directly from your Zoom portal.",
+    "type": "legit",
+    "explanation": "Official Zoom domain (.us) — standard cloud recording notification, no action required."
+  },
+  {
+    "from": "noreply@dropbox.com",
+    "subject": "Razlan Shared a Folder With You on Dropbox",
+    "body": "Razlan has invited you to collaborate on the shared folder 'Project Alpha' on Dropbox. Click the link in this email or log into your Dropbox account to access the shared folder.",
+    "type": "legit",
+    "explanation": "Official Dropbox domain — standard folder share notification, no suspicious links."
+  },
+  {
+    "from": "noreply@youtube.com",
+    "subject": "Your YouTube Channel Reached 1,000 Subscribers!",
+    "body": "Congratulations — your YouTube channel just hit 1,000 subscribers! You're now eligible to apply for the YouTube Partner Program and enable monetization on your channel.",
+    "type": "legit",
+    "explanation": "Official YouTube domain — standard milestone notification, no credentials or data requested."
+  },
+  {
+    "from": "noreply@discord.com",
+    "subject": "You've Been Added to 'Study Group 2025' on Discord",
+    "body": "You've been added to the Discord server 'Study Group 2025'. Open Discord on your device to start chatting with the members and explore the available channels in this server.",
+    "type": "legit",
+    "explanation": "Official Discord domain — routine server invitation, no credentials or data requested."
+  },
+  {
+    "from": "receipts@foodpanda.my",
+    "subject": "Your Foodpanda Receipt — Order #FP3948",
+    "body": "Thank you for your order! You ordered Nasi Lemak Kukus x2 from Pak Nasser's Kitchen. Your total was RM24.00 paid via GrabPay. We hope you enjoy your meal!",
+    "type": "legit",
+    "explanation": "Official Foodpanda Malaysia receipt domain — standard order receipt, informational only."
+  },
+  {
+    "from": "noreply@steam.com",
+    "subject": "Steam: You've Received a Game Gift from a Friend",
+    "body": "Your friend Hazim has gifted you 'Stardew Valley' on Steam. The game has been added to your Steam library and is ready to install and play whenever you'd like.",
+    "type": "legit",
+    "explanation": "Official Steam domain — standard gift notification, no credentials or payment info requested."
+  },
+  {
+    "from": "no-reply@canva.com",
+    "subject": "Your Canva Design is Ready to Download",
+    "body": "Your exported Canva design 'Resume 2025.pdf' has been successfully processed and is ready for download. Access it anytime from your Canva project dashboard.",
+    "type": "legit",
+    "explanation": "Official Canva domain — routine design export notification, no credentials requested."
+  },
+  {
+    "from": "noreply@unifi.com.my",
+    "subject": "Your Unifi Monthly Bill for March 2025 is Ready",
+    "body": "Your Unifi broadband bill for March 2025 has been generated. Amount due: RM89.00. Auto-debit will be processed on the 20th of March. View your full bill details in the Unifi portal.",
+    "type": "legit",
+    "explanation": "Official Unifi Malaysia domain — routine monthly billing notification, no payment link clicked."
+  },
+  {
+    "from": "noreply@celcom.com.my",
+    "subject": "Celcom: Your Reload of RM30 Was Successful",
+    "body": "RM30 has been successfully reloaded to your Celcom number 012-3456789. Your prepaid credit is now valid until 15 April 2025. Thank you for using Celcom services.",
+    "type": "legit",
+    "explanation": "Official Celcom domain — standard reload confirmation, no links or personal data requested."
+  },
+  {
+    "from": "noreply@maxis.com.my",
+    "subject": "Your Maxis Monthly Invoice for March 2025",
+    "body": "Your Maxis bill for March 2025 has been generated. Total amount due: RM65.00. Payment due date: 1 April 2025. Log in to MyMaxis to view your detailed bill or set up auto-payment.",
+    "type": "legit",
+    "explanation": "Official Maxis Malaysia domain — routine billing notification, no credentials requested."
+  },
+  {
+    "from": "no-reply@dhl.com",
+    "subject": "DHL: Your Shipment is Out for Delivery Today",
+    "body": "Your DHL shipment (Tracking: 1234567890) is currently out for delivery. Estimated time window: 10 AM to 2 PM today. Please ensure someone is available at the delivery address.",
+    "type": "legit",
+    "explanation": "Official DHL domain — standard delivery update with no payment or credential requests."
+  },
+  {
+    "from": "noreply@cimb.com.my",
+    "subject": "CIMB Clicks: Transfer of RM120 Successful",
+    "body": "Your online transfer of RM120.00 to Amirul Haqeem was completed successfully on 14 March 2025. Transaction reference: 20250314TXN482. Keep this as your record.",
+    "type": "legit",
+    "explanation": "Official CIMB Malaysia domain — standard transaction notification, no action required."
+  },
+  {
+    "from": "noreply@maybank2u.com.my",
+    "subject": "Maybank2u: Your Online Transfer Was Successful",
+    "body": "You have successfully transferred RM500.00 to account ending 4521 at RHB Bank. This transfer was processed on 14 March 2025 at 3:42 PM. Thank you for banking with Maybank.",
+    "type": "legit",
+    "explanation": "Official Maybank2u domain — standard transfer confirmation, no credential or link needed."
+  },
+  {
+    "from": "support@rhbgroup.com",
+    "subject": "RHB: Your Fixed Deposit Has Matured Today",
+    "body": "Your RHB Fixed Deposit of RM5,000 has reached its maturity date today. The principal and interest have been credited back to your linked RHB current account. Log in to view details.",
+    "type": "legit",
+    "explanation": "Official RHB Group domain — standard fixed deposit maturity notification, informational only."
+  },
+  {
+    "from": "no-reply@bankislam.com.my",
+    "subject": "Bank Islam: Your Debit Card Statement is Ready",
+    "body": "Your Bank Islam Visa Debit Card statement for February 2025 is now available for viewing. Log in to Bank Islam Online to download your full monthly statement at your convenience.",
+    "type": "legit",
+    "explanation": "Official Bank Islam domain — standard e-statement notification, no credentials requested."
+  },
+  {
+    "from": "noreply@hsbc.com.my",
+    "subject": "HSBC: Your Credit Card Statement for March 2025",
+    "body": "Your HSBC credit card statement for March 2025 is now available online. Minimum payment due: RM150.00 by 5 April 2025. Log in to HSBC Online Banking to view the full statement.",
+    "type": "legit",
+    "explanation": "Official HSBC Malaysia domain — standard credit card statement notification."
+  },
+  {
+    "from": "no-reply@tngdigital.com.my",
+    "subject": "Touch 'n Go: Your eWallet Reload Was Successful",
+    "body": "RM50.00 has been successfully reloaded to your Touch 'n Go eWallet. Your new eWallet balance is RM78.20. You can view your full transaction history anytime in the TNG eWallet app.",
+    "type": "legit",
+    "explanation": "Official TNG Digital domain — standard reload confirmation, no credentials or links needed."
+  },
+  {
+    "from": "noreply@uitm.edu.my",
+    "subject": "UiTM: Final Exam Schedule for March 2025 Available",
+    "body": "Your final examination schedule for Semester 2 Session 2024/2025 is now available on the UiTM Student Portal (i-Student). Please log in to view your personal exam timetable. Good luck!",
+    "type": "legit",
+    "explanation": "Official UiTM Malaysia academic domain — routine academic notification, no credential request."
+  },
+  {
+    "from": "noreply@instagram.com",
+    "subject": "Your Instagram Reel Just Hit 10,000 Views!",
+    "body": "Congratulations! Your Reel posted on 10 March has reached 10,000 views. Check your Instagram Insights in the app to see detailed performance metrics and audience engagement data.",
+    "type": "legit",
+    "explanation": "Official Instagram domain — routine milestone notification, no credentials or data requested."
+  },
+  {
+    "from": "no-reply@payoneer.com",
+    "subject": "Payoneer: You've Received a Payment of USD 150.00",
+    "body": "You received a payment of USD 150.00 from Fiverr. The funds are now available in your Payoneer account balance and are ready to use or withdraw to your local bank account.",
+    "type": "legit",
+    "explanation": "Official Payoneer domain — standard payment receipt notification, no credentials requested."
+  },
+  {
+    "from": "noreply@results.lhdn.gov.my",
+    "subject": "LHDN: Your e-Filing Submission Has Been Received",
+    "body": "Your income tax e-Filing for Year of Assessment 2024 has been successfully received by LHDN. Reference number: E2024-48291. Please keep this confirmation for your personal tax records.",
+    "type": "legit",
+    "explanation": "Official LHDN/Hasil Malaysia government domain — standard tax filing acknowledgment."
+  },
+  {
+    "from": "noreply@mysejahtera.malaysia.gov.my",
+    "subject": "MySejahtera: Your Digital Health Certificate Updated",
+    "body": "Your MySejahtera Digital Health Certificate has been updated with your latest health information. You can view and share your updated certificate anytime through the MySejahtera app.",
+    "type": "legit",
+    "explanation": "Official MySejahtera Malaysian government domain — routine health record update, informational."
+  },
+  {
+    "from": "noreply@shopee.com",
+    "subject": "ShopeePay: Cash Out Request Processed Successfully",
+    "body": "Your ShopeePay cash-out request of RM150.00 has been successfully processed. Funds will be transferred to your registered bank account within 1-3 business days. No action is required.",
+    "type": "legit",
+    "explanation": "Official Shopee domain — standard cash-out confirmation, no credentials or links needed."
+  }
+]

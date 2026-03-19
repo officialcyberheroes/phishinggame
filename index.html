@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Phisher!</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     START SCREEN
+═══════════════════════════════════════════════ -->
+<div id="start-screen" class="screen active">
+
+  <!-- Ambient background glows -->
+  <div class="sc-glow sc-glow-blue"></div>
+  <div class="sc-glow sc-glow-green"></div>
+
+  <div class="sc-container">
+
+    <!-- Company header bar -->
+    <div class="sc-company-bar">
+      <div class="sc-company-logo">
+        <span style="color:#ea4335">M</span><span style="color:#4285f4">a</span><span style="color:#fbbc04">i</span><span style="color:#34a853">l</span><span class="sc-company-suffix">Guard Inc.</span>
+      </div>
+      <div class="sc-company-tag">
+        <span class="sc-tag-dot"></span>Internship Portal &mdash; Day 1
+      </div>
+    </div>
+
+    <!-- Email notification card -->
+    <div class="sc-email-card">
+
+      <!-- Unread pill at top -->
+      <div class="sc-unread-bar">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>You have <strong>1 unread email</strong> in your work inbox</span>
+        <span class="sc-unread-time">Just now</span>
+      </div>
+
+      <!-- Email meta: from / to / date -->
+      <div class="sc-email-meta">
+        <div class="sc-avatar-boss">H</div>
+        <div class="sc-meta-info">
+          <div class="sc-meta-name">
+            Cik Jiha
+            <span class="sc-meta-role">- Senior IT Manager</span>
+          </div>
+          <div class="sc-meta-addr">
+            <span class="sc-addr">najihah@mailguard.com</span>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            <span class="sc-addr">you@mailguard.com</span>
+          </div>
+        </div>
+        <div class="sc-meta-time">Today, 9:00 AM</div>
+      </div>
+
+      <!-- Subject line -->
+      <div class="sc-subject">
+        <span class="sc-urgent-badge">URGENT</span>
+        Please clear my inbox - you have 60 seconds, go!
+      </div>
+
+      <!-- Email body -->
+      <div class="sc-email-body">
+
+        <p>Hey Intern, welcome to <strong>MailGuard Inc.</strong>! I'm buried in meetings all day.. so here's your first task, and it can't wait.</p>
+
+        <p>My inbox is full of junk and I suspect half of it are <strong>phishing scams</strong>. Go through each email and decide whether to keep it or flag it.</p>
+
+        <!-- Rules quoted block -->
+        <div class="sc-rules-block">
+          <div class="sc-rules-label">📋 What you need to do:</div>
+          <div class="sc-rule-row">
+            <span class="sc-rule-pill pill-legit">✅ Legit</span>
+            <span>Normal business email - safe to keep</span>
+          </div>
+          <div class="sc-rule-row">
+            <span class="sc-rule-pill pill-phish">🚨 Phishing</span>
+            <span>Suspicious scam - flag &amp; remove it</span>
+          </div>
+        </div>
+
+        <!-- Scoring chips -->
+        <div class="sc-chips-row">
+          <span class="sc-chip chip-correct">✅ Correct &nbsp;<strong>+10</strong></span>
+          <span class="sc-chip chip-wrong">❌ Wrong &nbsp;<strong>−5</strong></span>
+          <span class="sc-chip chip-streak">🔥 3-streak &nbsp;<strong>+5</strong></span>
+          <span class="sc-chip chip-timer">⏱ &nbsp;<strong>60s</strong></span>
+        </div>
+
+        <!-- Compact signature -->
+        <div class="sc-signature-compact">
+          <div class="sc-sig-avatar">H</div>
+          <div>
+            <span class="sc-sig-name">Cik Jiha</span>
+            <span class="sc-sig-sep"> · </span>
+            <span class="sc-sig-role">Senior IT Manager - Don't let me down. 👀</span>
+          </div>
+        </div>
+
+      </div><!-- /sc-email-body -->
+
+      <!-- CTA button -->
+      <div class="sc-cta">
+        <button class="btn-start" onclick="startGame()">
+          ▶ &nbsp;Accept Task - Start Clearing Inbox
+        </button>
+        <p class="sc-cta-hint">Read each email carefully. The inbox won't clear itself.</p>
+      </div>
+
+    </div><!-- /sc-email-card -->
+  </div><!-- /sc-container -->
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     GAME SCREEN - Gmail-style Interface
+═══════════════════════════════════════════════ -->
+<div id="game-screen" class="screen">
+
+  <!-- ── Gmail Header Bar ── -->
+  <header class="gm-header">
+    <div class="gm-header-left">
+      <button class="gm-hamburger">&#9776;</button>
+      <div class="gm-logo">
+        <span class="logo-letter" style="color:#ea4335">M</span><!--
+        --><span class="logo-letter" style="color:#4285f4">a</span><!--
+        --><span class="logo-letter" style="color:#fbbc04">i</span><!--
+        --><span class="logo-letter" style="color:#34a853">l</span><!--
+        --><span class="logo-word">Guard</span>
+      </div>
+    </div>
+
+    <div class="gm-header-center">
+      <div class="gm-search">
+        <span class="gm-search-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9aa0a6" stroke-width="2.5">
+            <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
+          </svg>
+        </span>
+        <span class="gm-search-text">Search mail</span>
+        <span class="gm-search-tune">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9aa0a6" stroke-width="2">
+            <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <div class="gm-header-right">
+      <div class="gm-hud">
+        <div class="gm-pill timer-pill">
+          <span class="gm-pill-icon">⏱</span>
+          <span class="gm-pill-val" id="timer-val">60</span>
+          <span class="gm-pill-unit">s</span>
+        </div>
+        <div class="gm-pill score-pill">
+          <span class="gm-pill-icon">💯</span>
+          <span class="gm-pill-val" id="score-val">0</span>
+        </div>
+        <div class="gm-pill streak-pill">
+          <span class="gm-pill-icon">🔥</span>
+          <span class="gm-pill-val" id="streak-val">0</span>
+        </div>
+      </div>
+      <button class="gm-mute-btn" id="mute-btn" onclick="toggleMusic()" title="Toggle music">
+        <svg id="mute-icon-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+          <path d="M19.07 4.93a10 10 0 010 14.14"/>
+          <path d="M15.54 8.46a5 5 0 010 7.07"/>
+        </svg>
+        <svg id="mute-icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+          <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+        </svg>
+      </button>
+      <div class="gm-avatar-btn">R</div>
+    </div>
+  </header>
+
+  <!-- Timer progress bar (replaces the thin line under header) -->
+  <div class="gm-timer-track"><div id="timer-bar"></div></div>
+
+  <!-- ── Gmail Body ── -->
+  <div class="gm-body">
+
+    <!-- ── Sidebar ── -->
+    <aside class="gm-sidebar">
+      <button class="gm-compose-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+        </svg>
+        <span>Compose</span>
+      </button>
+
+      <nav class="gm-nav">
+        <a class="gm-nav-item active">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          <span class="nav-lbl">Inbox</span>
+          <span class="nav-cnt">99+</span>
+        </a>
+        <a class="gm-nav-item">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span class="nav-lbl">Starred</span>
+        </a>
+        <a class="gm-nav-item">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="nav-lbl">Snoozed</span>
+        </a>
+        <a class="gm-nav-item">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <span class="nav-lbl">Sent</span>
+        </a>
+        <a class="gm-nav-item">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span class="nav-lbl">Drafts</span>
+          <span class="nav-cnt-dim">3</span>
+        </a>
+        <a class="gm-nav-item">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+          <span class="nav-lbl">More</span>
+        </a>
+      </nav>
+
+      <div class="gm-sidebar-section-label">Labels</div>
+
+      <nav class="gm-nav">
+        <a class="gm-nav-item label-item">
+          <span class="label-dot" style="background:var(--gm-green)"></span>
+          <span class="nav-lbl">Correct</span>
+          <span class="nav-cnt-dim" id="sb-correct" style="color:var(--gm-green)">0</span>
+        </a>
+        <a class="gm-nav-item label-item">
+          <span class="label-dot" style="background:var(--gm-red)"></span>
+          <span class="nav-lbl">Wrong</span>
+          <span class="nav-cnt-dim" id="sb-wrong" style="color:var(--gm-red)">0</span>
+        </a>
+        <a class="gm-nav-item label-item">
+          <span class="label-dot" style="background:var(--gm-orange)"></span>
+          <span class="nav-lbl">Best Streak</span>
+          <span class="nav-cnt-dim" id="sb-streak" style="color:var(--gm-orange)">0</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ── Main Email Area ── -->
+    <main class="gm-main">
+
+      <!-- Category tabs (like Gmail's Primary / Promotions) -->
+      <div class="inbox-tabs">
+        <button class="tab-btn active">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 16H5V5h14v14z"/></svg>
+          Primary
+        </button>
+        <button class="tab-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          Promotions <span class="tab-badge">50 new</span>
+        </button>
+        <button class="tab-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          Social <span class="tab-badge">8 new</span>
+        </button>
+        <button class="tab-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Updates <span class="tab-badge">50 new</span>
+        </button>
+      </div>
+
+      <!-- Inbox toolbar (decorative controls + pagination) -->
+      <div class="inbox-toolbar">
+        <div class="tb-left">
+          <label class="tb-checkbox"><input type="checkbox"/><span></span></label>
+          <button class="tb-icon-btn" title="Refresh">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+          </button>
+          <button class="tb-icon-btn" title="More">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+          </button>
+        </div>
+        <div class="tb-right">
+          <span class="tb-count">1–50 of 3,499</span>
+          <button class="tb-icon-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="tb-icon-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ── Inbox Email List ── -->
+      <div class="email-list">
+
+        <!-- Challenge email row (always unread + selected) -->
+        <div class="email-row unread selected" id="challenge-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star unstarred">&#9733;</span>
+          <span class="row-sender" id="row-sender">—</span>
+          <div class="row-mid">
+            <span class="row-subject" id="row-subject">—</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview" id="row-preview">—</span>
+          </div>
+          <span class="row-date" id="row-date">Just now</span>
+        </div>
+
+        <!-- Decorative fake rows (mirroring user's real inbox screenshot) -->
+        <div class="email-row fake-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star starred">&#9733;</span>
+          <span class="row-sender">Google</span>
+          <div class="row-mid">
+            <span class="row-subject">Security alert</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview">A new sign-in on Apple iPhone 12 Pro. We noticed a new sign-in to your Google Account...</span>
+          </div>
+          <span class="row-date">16 Mar</span>
+        </div>
+        <div class="email-row fake-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star unstarred">&#9733;</span>
+          <span class="row-sender">McDonald's Malaysia</span>
+          <div class="row-mid">
+            <span class="row-subject">PERCUMA 2 Ketul Ayam Goreng McD. Jom makan! ✨</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview">Tebus tawaran di dalam App McD, semuanya untuk anda!</span>
+          </div>
+          <span class="row-date">16 Mar</span>
+        </div>
+        <div class="email-row fake-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star unstarred">&#9733;</span>
+          <span class="row-sender">PlayStation</span>
+          <div class="row-mid">
+            <span class="row-subject">Thank You For Your Purchase</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview">Your PlayStation Store transaction was successful. Thanks! You'll find a copy of your transaction...</span>
+          </div>
+          <span class="row-date">17 Mar</span>
+        </div>
+        <div class="email-row fake-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star unstarred">&#9733;</span>
+          <span class="row-sender">Hack The Box</span>
+          <div class="row-mid">
+            <span class="row-subject">🎉 Congratulations! You've Earned a New Badge on Hack The Box</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview">You earned a new Badge! Investigator In The Making. Congra...</span>
+          </div>
+          <span class="row-date">17 Mar</span>
+        </div>
+        <div class="email-row fake-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star unstarred">&#9733;</span>
+          <span class="row-sender">m2u</span>
+          <div class="row-mid">
+            <span class="row-subject">You've received money in your Maybank account</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview">Hi Miss Najihah, You have received RM 50.00 in your account ***1234...</span>
+          </div>
+          <span class="row-date">17 Mar</span>
+        </div>
+        <div class="email-row fake-row">
+          <label class="row-check"><input type="checkbox"/><span></span></label>
+          <span class="row-star unstarred">&#9733;</span>
+          <span class="row-sender">Truecaller</span>
+          <div class="row-mid">
+            <span class="row-subject">Truecaller Caller ID now seamless 🎉</span>
+            <span class="row-sep"> &mdash; </span>
+            <span class="row-preview">Premium lets you skip opening the app Hello from Truecaller, Truecaller Caller ID on iP...</span>
+          </div>
+          <span class="row-date">15 Mar</span>
+        </div>
+
+      </div><!-- /email-list -->
+
+      <!-- ── Reading Pane ── -->
+      <div class="reading-pane" id="reading-pane">
+
+        <!-- RP top action bar -->
+        <div class="rp-topbar">
+          <div class="rp-subject-title" id="rp-subject">—</div>
+          <div class="rp-topbar-actions">
+            <button class="rp-tb-btn" title="Archive">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+            </button>
+            <button class="rp-tb-btn" title="Report spam">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </button>
+            <button class="rp-tb-btn" title="Delete">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+            </button>
+            <div class="rp-tb-divider"></div>
+            <button class="rp-tb-btn" title="Reply">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 17 4 12 9 7"/><path d="M20 18v-2a4 4 0 00-4-4H4"/></svg>
+            </button>
+            <button class="rp-tb-btn" title="Forward">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 17 20 12 15 7"/><path d="M4 18v-2a4 4 0 014-4h12"/></svg>
+            </button>
+            <button class="rp-tb-btn" title="More">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Email sender info row -->
+        <div class="rp-sender-row">
+          <div class="rp-avatar" id="rp-avatar">?</div>
+          <div class="rp-sender-block">
+            <div class="rp-name-line">
+              <span class="rp-display-name" id="rp-display-name">—</span>
+              <span class="rp-from-bracket">&lt;<span id="rp-from-addr">—</span>&gt;</span>
+            </div>
+            <div class="rp-to-line">
+              to <span class="rp-to-me">me</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+          <div class="rp-date-block">
+            <span id="rp-date">—</span>
+            <div class="rp-icon-row">
+              <button class="rp-tb-btn" title="Star">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </button>
+              <button class="rp-tb-btn" title="Reply">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 17 4 12 9 7"/><path d="M20 18v-2a4 4 0 00-4-4H4"/></svg>
+              </button>
+              <button class="rp-tb-btn" title="More">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email body -->
+        <div class="rp-body" id="rp-body">—</div>
+
+        <!-- Feedback banner -->
+        <div class="rp-feedback" id="feedback-banner">
+          <span id="fb-icon"></span>
+          <strong id="fb-label"></strong>
+          <span id="fb-explanation"></span>
+        </div>
+
+        <!-- Reply-style action buttons -->
+        <div class="rp-action-footer">
+          <span class="rp-footer-hint">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Is this email safe or a <strong>phishing</strong> attempt?
+          </span>
+          <div class="answer-btns">
+            <button class="btn-answer btn-legit"    id="btn-legit"    onclick="answer('legit')">✅ &nbsp;Legit</button>
+            <button class="btn-answer btn-phishing" id="btn-phishing" onclick="answer('phishing')">🚨 &nbsp;Phishing</button>
+          </div>
+        </div>
+
+      </div><!-- /reading-pane -->
+    </main><!-- /gm-main -->
+  </div><!-- /gm-body -->
+</div><!-- /game-screen -->
+
+
+<!-- ═══════════════════════════════════════════════
+     END SCREEN
+═══════════════════════════════════════════════ -->
+<div id="end-screen" class="screen">
+
+  <!-- Ambient glows (shared with start screen) -->
+  <div class="sc-glow sc-glow-blue"></div>
+  <div class="sc-glow sc-glow-green"></div>
+
+  <div class="end-container">
+
+    <!-- Company topbar -->
+    <div class="sc-company-bar">
+      <div class="sc-company-logo">
+        <span style="color:#ea4335">M</span><span style="color:#4285f4">a</span><span style="color:#fbbc04">i</span><span style="color:#34a853">l</span><span class="sc-company-suffix">Guard Inc.</span>
+      </div>
+      <div class="sc-company-tag">
+        <span class="sc-tag-dot" style="background:var(--gm-orange)"></span>Performance Review
+      </div>
+    </div>
+
+    <!-- Main end card -->
+    <div class="end-card">
+
+      <!-- Supervisor verdict section -->
+      <div class="end-verdict">
+        <div class="end-verdict-who">
+          <div class="end-boss-avatar">J</div>
+          <div class="end-boss-info">
+            <div class="end-boss-name">Cik Jiha</div>
+            <div class="end-boss-role">Senior IT Manager</div>
+          </div>
+          <div class="end-boss-badge" id="end-boss-badge">📋 Reviewing...</div>
+        </div>
+        <div class="end-bubble" id="sv-bubble">
+          <div class="end-bubble-arrow"></div>
+          <span>"..."</span>
+        </div>
+      </div>
+
+      <div class="end-divider"></div>
+
+      <!-- Grade + label -->
+      <div class="end-grade-section">
+        <div class="grade-circle" id="grade-circle">A</div>
+        <div class="end-grade-text">
+          <div class="grade-lbl" id="grade-label">Expert Threat Spotter</div>
+          <div class="end-accuracy-row">
+            <span id="end-accuracy" class="end-acc-val">0%</span>
+            <span class="end-acc-label">accuracy rate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats grid -->
+      <div class="end-stats-grid">
+        <div class="end-stat-box">
+          <span class="esb-icon">💯</span>
+          <span class="esb-val" id="end-score" style="color:var(--gm-blue)">0</span>
+          <span class="esb-lbl">Score</span>
+        </div>
+        <div class="end-stat-box">
+          <span class="esb-icon">📩</span>
+          <span class="esb-val" id="end-answered">0</span>
+          <span class="esb-lbl">Answered</span>
+        </div>
+        <div class="end-stat-box">
+          <span class="esb-icon">✅</span>
+          <span class="esb-val" id="end-correct" style="color:var(--gm-green)">0</span>
+          <span class="esb-lbl">Correct</span>
+        </div>
+        <div class="end-stat-box">
+          <span class="esb-icon">❌</span>
+          <span class="esb-val" id="end-wrong" style="color:var(--gm-red)">0</span>
+          <span class="esb-lbl">Wrong</span>
+        </div>
+        <div class="end-stat-box">
+          <span class="esb-icon">🔥</span>
+          <span class="esb-val" id="end-streak" style="color:var(--gm-orange)">0</span>
+          <span class="esb-lbl">Best Streak</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="end-cta">
+        <button class="btn-replay" onclick="restartGame()">🔄 &nbsp;Try Again</button>
+        <p class="end-cta-hint">Maybe this time don't click the phishing ones. 😅</p>
+      </div>
+
+    </div><!-- /end-card -->
+  </div><!-- /end-container -->
+</div>
+
+<!-- Streak popup -->
+<div class="streak-popup" id="streak-popup">🔥 Streak Bonus! +5</div>
+
+<script src="game.js"></script>
+</body>
+</html>
