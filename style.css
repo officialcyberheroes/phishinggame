@@ -45,7 +45,7 @@ html, body {
   background: var(--gm-bg);
   color: var(--gm-text);
   font-size: 14px;
-  overflow: hidden;           /* Gmail never scrolls the shell */
+  overflow-x: hidden;         /* never scroll horizontally */
   overscroll-behavior: none;  /* prevent pull-to-refresh on mobile */
   -webkit-tap-highlight-color: transparent;
 }
@@ -65,7 +65,8 @@ html, body {
   justify-content: center;
   background: var(--gm-bg);
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;           /* allow scroll so CTA button is reachable */
+  overflow-x: hidden;
   padding: 24px 16px;
 }
 
@@ -1081,7 +1082,8 @@ html, body {
   justify-content: center;
   background: var(--gm-bg);
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;           /* allow scroll on small screens */
+  overflow-x: hidden;
   padding: 24px 16px;
 }
 
@@ -1380,23 +1382,31 @@ html, body {
   .btn-answer        { flex: 1; justify-content: center; padding: 11px 8px; font-size: 0.88rem; }
 
   /* ── Start screen mobile ── */
-  #start-screen      { padding: 16px 12px; }
-  .sc-container      { max-width: 100%; }
-  .sc-company-bar    { padding: 8px 14px; }
+  /* Use block only when active — block lets overflow-y scroll (flex+justify-content:center clips) */
+  #start-screen.active { display: block; padding: 12px 12px 24px; }
+  .sc-container        { max-width: 100%; margin: 0 auto; }
+  .sc-company-bar    { padding: 7px 14px; }
   .sc-company-suffix { display: none; }
-  .sc-email-body     { padding: 14px 14px 4px; gap: 10px; }
-  .sc-chips-row      { gap: 5px; }
-  .sc-chip           { font-size: 0.73rem; padding: 3px 10px; }
-  .sc-cta            { padding: 14px 14px 16px; }
-  .btn-start         { padding: 13px 0; font-size: 0.9rem; }
-  .sc-subject        { padding: 10px 14px; font-size: 0.95rem; }
-  .sc-email-meta     { padding: 12px 14px 10px; }
-  .sc-rules-block    { padding: 12px 14px; }
-  .sc-rule-row       { font-size: 0.82rem; }
+  .sc-unread-bar     { padding: 7px 14px; font-size: 0.76rem; }
+  .sc-email-meta     { padding: 10px 14px 8px; }
+  .sc-avatar-boss    { width: 34px; height: 34px; font-size: 0.9rem; }
+  .sc-meta-name      { font-size: 0.85rem; }
+  .sc-subject        { padding: 8px 14px; font-size: 0.9rem; }
+  .sc-email-body     { padding: 10px 14px 4px; gap: 8px; font-size: 0.84rem; }
+  .sc-rules-block    { padding: 10px 12px; gap: 7px; }
+  .sc-rules-label    { font-size: 0.73rem; }
+  .sc-rule-row       { font-size: 0.8rem; gap: 8px; }
+  .sc-rule-pill      { padding: 2px 9px; font-size: 0.73rem; }
+  .sc-chips-row      { gap: 4px; }
+  .sc-chip           { font-size: 0.71rem; padding: 3px 9px; }
+  .sc-signature-compact { padding-top: 8px; }
+  .sc-cta            { padding: 10px 14px 12px; }
+  .btn-start         { padding: 12px 0; font-size: 0.88rem; }
+  .sc-cta-hint       { font-size: 0.7rem; }
 
   /* ── End screen mobile ── */
-  #end-screen        { padding: 16px 12px; }
-  .end-container     { max-width: 100%; }
+  #end-screen.active { display: block; padding: 12px 12px 24px; }
+  .end-container     { max-width: 100%; margin: 0 auto; }
   .end-bubble        { margin-left: 0; font-size: 0.82rem; }
   .end-bubble-arrow  { display: none; }
   .end-grade-section { padding: 16px 14px 12px; gap: 14px; }
@@ -1426,8 +1436,12 @@ html, body {
 
   .row-sender        { width: 90px; }
 
-  .sc-chips-row { flex-direction: column; }
-  .sc-email-body { gap: 8px; font-size: 0.84rem; }
+  .sc-chips-row  { flex-direction: column; gap: 3px; }
+  .sc-email-body { gap: 6px; font-size: 0.82rem; }
+  .sc-email-meta { padding: 8px 12px 6px; }
+  .sc-subject    { padding: 6px 12px; font-size: 0.86rem; }
+  .sc-cta        { padding: 8px 12px 10px; }
+  .btn-start     { padding: 11px 0; }
   .end-stats-grid { grid-template-columns: repeat(3, 1fr); }
   .end-verdict { padding: 14px 12px 10px; }
   .end-grade-section { padding: 14px 12px 10px; }
